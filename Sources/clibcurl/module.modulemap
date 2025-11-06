@@ -1,0 +1,9 @@
+module clibcurl [system] {
+
+//    header "/opt/homebrew/include/libcurl/libcurl.h"
+
+
+  header "libcurl.h"
+  link "clibcurl"
+  export *
+}

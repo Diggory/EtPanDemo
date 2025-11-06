@@ -1,0 +1,12 @@
+module clibetpan [system] {
+  header "include/clibetpan.h"
+  link "etpan"
+  export *
+}
+
+
+//    umbrella "/opt/homebrew/include/libetpan/"
+//  header "/opt/homebrew/include/libetpan/libetpan.h"
+//  umbrella header "/opt/homebrew/include/libetpan/libetpan.h"
+
+
