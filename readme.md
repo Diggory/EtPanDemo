@@ -1,4 +1,4 @@
-#Swift EtPanDemo
+# Swift EtPanDemo
 
 A small demo SwiftPM package which shows how to use a Homebrew library on macOS as a `.systemLibrary` dependency.
 
