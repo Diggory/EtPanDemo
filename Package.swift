@@ -3,6 +3,8 @@
 
 import PackageDescription
 
+//  https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/addingsystemlibrarydependency/#Overview
+
 let package = Package(
     name: "EtPanDemo",
     dependencies: [
