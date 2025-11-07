@@ -18,10 +18,10 @@ let package = Package(
                 .byName(name: "clibetpan"),
             ],
             swiftSettings: [
-                .unsafeFlags(["-I/opt/homebrew/include"])
+                .unsafeFlags(["-I/opt/homebrew/include"], .when(platforms: [.macOS]))
             ],
             linkerSettings: [
-                .unsafeFlags(["-Xlinker", "-L/opt/homebrew/lib"]),
+                .unsafeFlags(["-Xlinker", "-L/opt/homebrew/lib"], .when(platforms: [.macOS])),
                 .linkedLibrary("iconv")
             ]
         ),
