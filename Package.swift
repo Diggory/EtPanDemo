@@ -17,6 +17,14 @@ let package = Package(
             name: "EtPanDemo",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
+                .byName(name: "EtPanSwift"),
+            ],
+        ),
+
+        //  Swift Library Target
+        .target(
+            name: "EtPanSwift",
+            dependencies: [
                 .byName(name: "clibetpan"),
             ],
             swiftSettings: [
@@ -28,6 +36,7 @@ let package = Package(
             ]
         ),
 
+        //  System Library Target - Installed via HomeBrew on macOS
         .systemLibrary(
             name: "clibetpan",
             pkgConfig: "libetpan",
@@ -36,15 +45,6 @@ let package = Package(
                 .aptItem(["libetpan-dev"])
             ],
         ),
-
-//            .systemLibrary(
-//                name: "clibcurl",
-//                pkgConfig: "clibcurl",
-//                providers: [
-//                    .brew(["clibcurl"]),
-//                ]
-//            )
-
 
     ]
 )
